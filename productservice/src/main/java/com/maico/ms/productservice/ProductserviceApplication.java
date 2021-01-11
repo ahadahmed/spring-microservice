@@ -8,6 +8,7 @@ public class ProductserviceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ProductserviceApplication.class, args);
+        System.out.println("hello CI/CD");
     }
 
 }
