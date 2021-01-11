@@ -48,7 +48,7 @@ jobs:
         run: mvn -version
 
       - name: Change Directory
-        run: cd productservice/ ; pwd
+        run: cd productservice/ ; ls -a; pwd
       - name: Print working directory
         run: pwd
 
