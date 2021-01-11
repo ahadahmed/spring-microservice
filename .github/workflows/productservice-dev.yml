@@ -47,10 +47,10 @@ jobs:
       - name: print maven version
         run: mvn -version
 
-      - name: Change Directory
-        run: cd productservice/ ; ls -a; pwd
-      - name: Print working directory
-        run: pwd
+#      - name: Change Directory
+#        run: cd productservice/ ; ls -a; pwd
+#      - name: Print working directory
+#        run: pwd
 
 
       - name: Caching local maven repository
@@ -61,4 +61,4 @@ jobs:
           restore-keys: ${{ runner.os }}-maven-
 
       - name: Test with Maven
-        run: mvn -B clean test
+        run: cd productservice/; pwd; mvn -B clean test
