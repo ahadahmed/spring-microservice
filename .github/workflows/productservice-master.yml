@@ -5,7 +5,7 @@ name: Product service CI On master pull_request with Maven
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
     paths:
       - 'productservice/**'
